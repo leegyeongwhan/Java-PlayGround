@@ -5,14 +5,16 @@ import java.util.Scanner;
 public class sum {
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("첫번째수");
-		int first =  scanner.nextInt();
-		System.out.println("두번째수");
-		int second =  scanner.nextInt();
-		
-		System.out.println("합은"+ (first+second));
-		scanner.close();
+		for(int i=0; i<2; i++) { // weekday ==su ==0
+			System.out.printf("  ");
+	}
+	for (int i = 1; i <= 31; i++) {
+		System.out.printf("%3d", i);
+		if (i % 7 == 0) {
+			System.out.println();
+		}
+	
 	}
 
+}
 }
